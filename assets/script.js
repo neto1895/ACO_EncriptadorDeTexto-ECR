@@ -1,4 +1,4 @@
-const textArea = document.querySelector(".textarea");
+const textArea = document.querySelector(".ingresetexto");
 const mensaje = document.querySelector(".mensaje");
 
 
@@ -18,7 +18,9 @@ function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
-    mensaje.style.backgroundImage = "none";
+    mensaje.style.display = "flex";
+    document.querySelector(".btnCopiar").style.display = "inherit";
+    document.querySelector(".noText").style.display = "none";
 }
 
 function desencriptar(stringDesencriptado){
@@ -38,3 +40,11 @@ function btnDesencriptar(){
     mensaje.value = textoEncriptado;
     textArea.value = "";
 }
+
+//toggle
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', ()=>{
+  document.body.classList.toggle('dark');
+});
+//toggle code ends
