@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <title>Encriptador</title>
   </head>
-
   <body>
     <header>
         <div class= "header">
@@ -27,7 +26,6 @@
             </label>
           </div>
           <div><img class="logo" src="./assets/images/logoneto1895.png"></div>
- 
         </div>
     </header>
     <main>
@@ -47,16 +45,12 @@
           <span><strong>Ningún mensaje de texto fue encontrado</strong></span>
           <span>Ingresa el texto que desees encriptar o desencriptar</span>
         </div>
- 
         <textarea class="mensaje"></textarea>
-        <button class="btnCopiar">Copiar</button>
-
-
+        <button class="btnCopiar" onclick="copyText()"onmouseout="outFunc()">
+          <span class="tooltiptext" id="myTooltip">Copiar a portapepeles</span>
+          Copiar</button>
       </section>
-
     </main>
-    
-
     <script src="./assets/script.js"></script>
   </body>
 </html>

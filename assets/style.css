@@ -20,6 +20,7 @@ body.dark {
     height: 48px;
     object-fit: contain;
 }
+
 h1{
     font-size: 40px;
     text-align: center;
@@ -30,7 +31,6 @@ main{
     display: flex;
     margin-bottom: 50px;
     margin-left:  80px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -42,8 +42,6 @@ main{
     width: 60%;
     height: 80vh;
 }
-
-
 
 .ingresetexto{
     background-color: inherit;
@@ -58,7 +56,6 @@ main{
     line-height: 150%;
     width: 90%;
     height: 60%;
-
 }
 ::placeholder{
     font-style: italic;
@@ -96,7 +93,6 @@ main{
     position: absolute;
     bottom: 150px;
     left: 33%;
-
 }
 
 #sec2{
@@ -108,9 +104,6 @@ main{
     margin-left: 5%;
     margin-top: 20px;
     height: 80vh;
-
-
-
 }
 
 .noText{
@@ -132,7 +125,6 @@ main{
     line-height: 150%;
     width: 90%;
     height: 80%;
-    
 }
 .mensaje:focus{
     outline: none;
@@ -150,136 +142,157 @@ main{
     width: 25%;  
     border-radius: 24px;
 }
-
 .information{
     color: gray;
     font-size: 25px;
 }
+ /* toggle code */
 
-      /* toggle code */
-
-        .checkbox {
-        opacity: 0;
-        position:absolute;
-        
-        }
-
-        .label {
-        width: 30px;
-        height: 8px;
-        top: 15px;
-        background-color:rgb(6, 10, 49);
-        display: flex;
-        border-radius:20px;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        position: relative;
-        transform: scale(1.5);
-        box-sizing:unset;
-        }
-        .ball {
-        width: 22px;
-        height: 22px;
-        background-color: rgb(255, 255, 255);
-        position: absolute;
-        top: 4px;
-        left: 6px;
-        border-radius: 50%;
-        transition: transform 0.2s linear;
-        }
-        .checkbox:checked + .label .ball{   /*  target the elemenent after the label*/
-        transform: translateX(18px);
-        }
-        .label i {
-        font-size: 15px;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        font-style: normal;
-        background-color:rgb(6, 10, 49);
+    .checkbox {
+    opacity: 0;
+    position:absolute;
+    
     }
-      /* here ends the toggle code */
 
-      @media screen and (max-width: 980px) {  
-        main{
-            display: flex;
-            flex-direction: column;
-        }
-        #sec1{
-            width: 100%;
-            height: 100%;
-            margin-bottom: 5vh;
+    .label {
+    width: 30px;
+    height: 8px;
+    top: 15px;
+    background-color:rgb(6, 10, 49);
+    display: flex;
+    border-radius:20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    transform: scale(1.5);
+    box-sizing:unset;
+    }
+    .ball {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+    }
+    .checkbox:checked + .label .ball{   /*  target the elemenent after the label*/
+    transform: translateX(18px);
+    }
+    .label i {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: normal;
+    background-color:rgb(6, 10, 49);
+    }
+/* here ends the toggle code */
 
-        }
-        .ingresetexto{
-            height: 40vh;
-        }
-
-        .btnEncriptar,
-        .btnDesencriptar,
-        .btnCopiar{
-            position: inherit;
-            width: 45%;
-            right: 0%;
-
-        }
-.btnCopiar{
-    width: 100%;
-}
-        #sec2{
-            position: initial;
-            width: 90%;
-            margin-left: 0%;
-            margin-top: 0px;
-            height: 100%;
-
-        }
-        .muneco{
-            display: none;
-        }
-
+      .btnCopiar .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
       }
+      .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      .btnCopiar:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+
+@media screen and (max-width: 980px) {  
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    #sec1{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5vh;
+    }
+    .ingresetexto{
+        height: 40vh;
+    }
+    .btnEncriptar,
+    .btnDesencriptar,
+    .btnCopiar{
+        position: inherit;
+        width: 45%;
+        right: 0%;
+
+    }
+    .btnCopiar{
+        width: 100%;
+    }
+    #sec2{
+        position: initial;
+        width: 90%;
+        margin-left: 0%;
+        margin-top: 0px;
+        height: 100%;
+    }
+    .muneco{
+        display: none;
+    }
+}
       
-      @media screen and (max-width: 768px) {
-
-        main{
-            display: flex;
-            flex-direction: column;
-        }
-        #sec1{
-            width: 100%;
-            height: 100%;
-            margin-bottom: 5vh;
-
-        }
-        .ingresetexto{
-            height: 40vh;
-        }
-        .btn{
-            display: flex;
-            flex-direction: column;
-        }
-        .btnEncriptar,
-        .btnDesencriptar,
-        .btnCopiar{
-            position: inherit;
-            width: 90%;
-            right: 0%;
-
-        }
-.btnCopiar{
-    width: 100%;
+@media screen and (max-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    #sec1{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5vh;
+    }
+    .ingresetexto{
+        height: 40vh;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .btnEncriptar,
+    .btnDesencriptar,
+    .btnCopiar{
+        position: inherit;
+        width: 90%;
+        right: 0%;
+    }
+    .btnCopiar{
+        width: 100%;
+    }
+    #sec2{
+        position: initial;
+        width: 90%;
+        margin-left: 0%;
+        margin-top: 0px;
+        height: 100%;
+    }
+    .muneco{
+        display: none;
+    }
 }
-        #sec2{
-            position: initial;
-            width: 90%;
-            margin-left: 0%;
-            margin-top: 0px;
-            height: 100%;
-
-        }
-        .muneco{
-            display: none;
-        }
-      }
       
