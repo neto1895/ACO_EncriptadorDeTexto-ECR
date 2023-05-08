@@ -2,9 +2,10 @@
 
 ![Web Developer](https://img.shields.io/badge/Alura%20Oracle%20ONE-Web%20Developer-blue)
 # ACO_EncriptadorDeTexto-ECR
-Alura Challenge ONE - Encriptador de Texto
+Alura Challenge ONE - Encriptador de Texto - #challengeonecodificador5
 
 ## Descripción
+
 
 Este repo contiene el Challenge ONE del curso de ORACLE Alura LATAM: Consiste en un encriptador y desencriptador de texto de acuerdo a especificaciones del desafío Alura. 
 
@@ -12,10 +13,9 @@ Este repo contiene el Challenge ONE del curso de ORACLE Alura LATAM: Consiste en
 
 (https://neto1895.github.io/ACO_EncriptadorDeTexto-ECR/)
 
-The following image shows the application first look and functionality. The functionallity lack the colors due the time is created the gif.
+The following image shows the application first look and functionality.
 
-![Quiz page demo](./assets/images/deployedpage.gif)
-
+![Quiz page demo](./assets/images/Encriptador.gif)
 
 ## Usage
 
